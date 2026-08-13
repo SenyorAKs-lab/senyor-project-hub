@@ -48,7 +48,9 @@ Aşağıdaki durumlarda merkez depo güncellenir:
 - Sürüm veya yayın
 - PDF/sunum ortak incelemesi
 
-Her küçük sohbet veya deneme için kayıt açılmaz. Güncel durum aynı dosyada tutulur; karar ve değişiklik geçmişi gerektiğinde eklenir.
+Her küçük sohbet veya deneme için kayıt açılmaz. Anlamlı gelişmeler aktif çalışma boyunca biriktirilir; her testten sonra otomatik commit atılmaz. GitHub kaydı yalnızca kullanıcı açıkça “kaydet/GitHub'a kaydet” dediğinde, “bugünlük bu kadar/burada bırakalım” diyerek oturumu kapattığında veya uzun bir aradan sonra kayıt önerisini onayladığında yapılır.
+
+AI kullanıcı yokken arka planda çalışamadığı için bir saatlik sessizlik tek başına otomatik commit oluşturmaz. Güncel durum aynı dosyada tutulur; karar ve değişiklik geçmişi gerektiğinde eklenir.
 
 ## Yeni bir AI için çalışma talimatı
 

@@ -25,9 +25,21 @@
 - Gizli anahtarlar ve kişisel veriler belgeye, ekrana veya commit’e konmaz.
 - Harici servislerde en az yetki ilkesi uygulanır.
 
+## GitHub kayıt zamanlaması
+
+Aktif çalışma sırasında her başarılı test, küçük karar veya ara sonuç için GitHub commit'i oluşturulmaz. Değişiklikler çalışma bağlamında biriktirilir.
+
+Commit yalnızca şu tetikleyicilerden biri oluştuğunda yapılır:
+
+- Kullanıcı açıkça “kaydet”, “GitHub'a kaydet”, “durumu güncelle” veya benzer bir talimat verir.
+- Kullanıcı “bugünlük bu kadar”, “burada bırakalım” veya oturumu kapatan benzer bir ifade kullanır.
+- Uzun bir aradan sonra kullanıcı geri döner ve birikmiş durumun kaydedilmesini onaylar.
+
+AI, kullanıcı mesaj göndermediği sırada arka planda çalışamaz ve yalnızca bir saat geçti diye kendiliğinden commit atamaz. Uzun ara algılandığında, çalışmaya devam etmeden önce birikmiş kaydın işlenmesi teklif edilir.
+
 ## Süreklilik
 
-Her anlamlı oturum sonunda şu dört nokta kaydedilir:
+Kayıt tetiklendiğinde şu dört nokta kaydedilir:
 
 1. Ne değişti?
 2. Ne doğrulandı?

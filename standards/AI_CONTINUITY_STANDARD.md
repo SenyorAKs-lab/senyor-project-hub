@@ -18,17 +18,28 @@ ChatGPT, Codex, Gemini veya başka bir AI ile çalışmaya geçildiğinde; önce
 
 Tek, dev bir bağlam dosyası oluşturulmaz. Güncel bilgi proje dosyasına, kalıcı ortak kural standarda, tarihsel karar karar günlüğüne gider.
 
-## Kayıt tetikleyicileri
+## Kayıt içeriğini oluşturan gelişmeler
+
+Aşağıdaki gelişmeler bir sonraki kayıt için biriktirilir:
 
 - Kapsam veya gereksinim değişti
 - Mimari karar alındı
 - Kritik hata bulundu/çözüldü
 - Test aşaması sonuçlandı
-- Çalışmaya uzun ara verilecek
 - Sürüm/yayın yapıldı
 - PDF/sunum incelemesi tamamlandı
 
-Küçük, geri alınabilir denemeler ve günlük sohbet tekrarları kaydedilmez.
+Bunların her biri tek başına anında GitHub commit'i oluşturmaz. Küçük, geri alınabilir denemeler ve günlük sohbet tekrarları kayda alınmaz.
+
+## GitHub commit tetikleyicileri
+
+Birikmiş durum yalnızca şu hallerde depoya işlenir:
+
+1. Kullanıcı açıkça “kaydet”, “GitHub'a kaydet” veya eşdeğer bir talimat verir.
+2. Kullanıcı “bugünlük bu kadar”, “burada bırakalım” veya oturumu kapatan eşdeğer bir ifade kullanır.
+3. Kullanıcı uzun bir aradan sonra geri döner ve kayıt önerisini onaylar.
+
+AI, kullanıcı yokken arka planda sayaç çalıştırıp commit atamaz. Bu nedenle bir saatlik sessizlik otomatik işlem değil, kullanıcı geri döndüğünde kayıt önerisi için işarettir.
 
 ## Devir paketinin asgari içeriği
 
