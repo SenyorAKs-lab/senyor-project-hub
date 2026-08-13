@@ -1,0 +1,62 @@
+# START HERE
+
+> Sürüm: 1.0  
+> Son güncelleme: 2026-08-13  
+> Amaç: Bir insanın veya yeni bir yapay zekânın çalışmaya en az bağlam kaybıyla devam etmesi
+
+## Okuma sırası
+
+1. Bu dosyayı tamamen oku.
+2. [PROJECT_INDEX.md](PROJECT_INDEX.md) içinden aktif projeyi bul.
+3. İlgili `projects/*.md` dosyasını tamamen oku.
+4. İşin türüne göre ilgili `standards/*.md` dosyasını oku.
+5. Uygulama yapmadan önce mevcut dosyaları ve son doğrulanmış test durumunu kontrol et.
+6. Çalışma sonunda anlamlı değişiklikleri güncel durum dosyasına işle.
+
+## Bilginin öncelik sırası
+
+Çelişki olduğunda şu sıra geçerlidir:
+
+1. Kullanıcının mevcut konuşmadaki açık talebi
+2. İlgili projenin güncel durum dosyası
+3. Doğrulanmış test kanıtı ve çalışan kod
+4. Ortak standartlar
+5. Eski karar ve değişiklik kayıtları
+6. Varsayım
+
+Varsayım, doğrulanmış bilgi gibi yazılmaz.
+
+## Devam etmeden önce kontrol listesi
+
+- Hangi proje üzerinde çalışılıyor?
+- Son tamamlanan adım ne?
+- Sıradaki tek somut adım ne?
+- Hangi testler gerçekten geçti?
+- Açık hata veya risk var mı?
+- Kodun güncel ve yedek sürümü hangisi?
+- İşlem veri silebilir, üzerine yazabilir veya dış sisteme yayın yapabilir mi?
+
+## Güncelleme kuralı
+
+Aşağıdaki durumlarda merkez depo güncellenir:
+
+- Önemli gereksinim veya kapsam değişikliği
+- Mimari karar
+- Kritik hata ve çözümü
+- Test aşamasının geçmesi veya başarısız olması
+- Uzun ara öncesi devir
+- Sürüm veya yayın
+- PDF/sunum ortak incelemesi
+
+Her küçük sohbet veya deneme için kayıt açılmaz. Güncel durum aynı dosyada tutulur; karar ve değişiklik geçmişi gerektiğinde eklenir.
+
+## Yeni bir AI için çalışma talimatı
+
+- Önce oku, sonra öner.
+- Test edilmemiş sonucu geçmiş gibi yazma.
+- Ekran görüntüsü veya çıktı varsa kanıtı yorumla; görünmeyen ayrıntıyı uydurma.
+- Kodu büyütmeden önce modül sınırlarını koru.
+- Kullanıcıya mümkünse çalıştırılabilir, tam dosya veya net bir yama ver.
+- Gizli bilgi, erişim anahtarı, parola, e-posta veya kişisel veri kaydetme.
+- Yıkıcı işlemlerde hedefi kesinleştir ve önizleme/geri dönüş yolunu koru.
+- Çalışma bittiğinde ilgili proje dosyasındaki “Son durum”, “Doğrulananlar”, “Bilinen sorunlar” ve “Sıradaki adım” bölümlerini güncelle.
