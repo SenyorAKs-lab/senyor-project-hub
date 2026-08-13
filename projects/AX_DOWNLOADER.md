@@ -69,6 +69,17 @@ Her iki koşuda 1/4/8 bağlantı çıktıları birebir aynı SHA-256 değerini v
 - Ağ geri geldiğinde yalnızca eksik segmentten devam
 - Son dosyada tam boyut doğrulaması
 
+### CP-005G — Windows yeniden başlatma sonrası paralel resume
+
+Test 2026-08-13 tarihinde gerçek Windows yeniden başlatmasıyla geçti.
+
+- Program yeniden açıldığında `Kayıtlı paralel indirme bulundu.` mesajını verdi.
+- Segment 3 için state/disk farkı güvenli biçimde uzlaştırıldı: `3784408 → 3817176`.
+- Toplam devam noktası `43.37 MB` olarak bulundu; indirme sıfırdan başlamadı.
+- Sekiz bağlantıyla eksik parçalar tamamlandı.
+- Birleştirme sonunda `SIZE_OK` ve `DOWNLOAD_COMPLETE` alındı.
+- Klasörde yalnızca nihai `100Mb.dat` kaldı; segment ve state dosyaları temizlendi.
+
 ## Mimari kararlar
 
 - Segment dosyasının gerçek disk boyutu resume için birincil otoritedir.
@@ -89,25 +100,15 @@ Her iki koşuda 1/4/8 bağlantı çıktıları birebir aynı SHA-256 değerini v
 
 ## Sıradaki tek somut adım
 
-**CP-005G — Windows yeniden başlatma sonrası paralel resume testi.**
+**CP-005H — Kontrollü HTTP 429 adaptif bağlantı düşürme testi.**
 
 Beklenen:
 
-1. Sekiz segmentli indirme devam ederken Windows normal biçimde yeniden başlatılır.
-2. Program aynı URL ile tekrar çalıştırılır.
-3. Segmentlerin gerçek disk boyutları bulunur.
-4. İndirme sıfırdan başlamaz; eksik aralıklardan devam eder.
+1. Test sunucusu sekiz eşzamanlı bağlantıda kontrollü biçimde HTTP 429 üretir.
+2. Motor mevcut ilerlemeyi kaybetmeden bağlantı sayısını 8 → 4 düşürür.
+3. Gerekirse aynı güvenli kuralla 4 → 1 düşürür.
+4. Kabul edilen segment verileri yeniden indirilmez ve aralıklar karışmaz.
 5. Sonuç `SIZE_OK` ve `DOWNLOAD_COMPLETE` olur.
-6. Segment, state, merge ve geçici dosyalar temizlenir.
+6. Kontrollü hash ile tek ve paralel sonuçların aynı olduğu doğrulanır.
 
-Bundan sonra gerçek 429 düşüşü, paralel kaynak değişimi, bozuk state ve birleştirme kesintisi testleri yapılmalıdır.
-
-## Yayın öncesi hedef mimari
-
-- `core/`: indirme ve segment planlama
-- `http/`: probe, Range doğrulama, retry/backoff
-- `persistence/`: state, atomik yazma, ileride SQLite
-- `verification/`: boyut ve hash doğrulama
-- `cli/`: komut satırı arayüzü
-- `tests/`: birim, entegrasyon ve dayanıklılık testleri
-- `docs/`: kullanıcı ve geliştirici belgeleri
+Bundan sonra paralel kaynak değişimi, bozuk state ve birleştirme sırasında kesinti testleri yapılmalıdır.
