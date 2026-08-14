@@ -1,11 +1,11 @@
 # AI Çalışma Sürekliliği Standardı
 
-> Sürüm: 1.0  
-> Son güncelleme: 2026-08-13
+> Sürüm: 1.1  
+> Son güncelleme: 2026-08-14
 
 ## Amaç
 
-ChatGPT, Codex, Gemini veya başka bir AI ile çalışmaya geçildiğinde; önceki kararlar, doğrulanmış sonuçlar ve sıradaki adım kaybolmadan devam edebilmek.
+ChatGPT, Codex, Claude Code, Gemini veya başka bir AI ile çalışmaya geçildiğinde; önceki kararlar, doğrulanmış sonuçlar ve sıradaki adım kaybolmadan devam edebilmek.
 
 ## Bilgi mimarisi
 
@@ -17,6 +17,14 @@ ChatGPT, Codex, Gemini veya başka bir AI ile çalışmaya geçildiğinde; önce
 - `CHANGELOG.md`: Merkez sistemin tarihsel değişimleri
 
 Tek, dev bir bağlam dosyası oluşturulmaz. Güncel bilgi proje dosyasına, kalıcı ortak kural standarda, tarihsel karar karar günlüğüne gider.
+
+## Platform giriş dosyaları
+
+- `AGENTS.md`: Genel kodlama ajanları için ince giriş noktası
+- `CLAUDE.md`: Claude Code'un otomatik proje belleği ve kaynak içe aktarma noktası
+- `GEMINI.md`: Gemini ve benzeri sistemler için ince giriş noktası
+
+Bu dosyalar güncel proje gerçeklerini çoğaltmaz; evrensel girişe, standartlara ve aktif proje kaynağına yönlendirir. Platform adaptörü ile kaynak dosya çelişirse proje kaynağı esas alınır ve adaptör düzeltilir.
 
 ## Kayıt içeriğini oluşturan gelişmeler
 

@@ -4,6 +4,8 @@ Bu dosya merkez sistemdeki anlamlı değişiklikleri izler. Proje içi ayrıntı
 
 ## 2026-08-14
 
+- Claude Code'un otomatik okuyacağı kök `CLAUDE.md` giriş dosyası eklendi; mevcut proje kaynağı ve ortak standartlar `@path` içe aktarımlarıyla bağlandı.
+- AI süreklilik standardına platform giriş dosyaları ve kaynak tekrarını önleyen adaptör kuralı eklendi.
 - AX Downloader güncel proje kaydı baştan sona yenilendi; doğrulanmış sonuçlar, açıklar, mimari ve tam yol haritası tek kaynakta toplandı.
 - CP-005H kontrollü HTTP 429 testinin 8 → 4 → 1 bağlantı düşüşü ve final bütünlük kontrolüyle geçtiği kaydedildi.
 - CP-005I aynı URL/kaynak değişimi testinde `ETAG_CHANGED` ile güvenli ret ve yarım verinin korunması kaydedildi.
