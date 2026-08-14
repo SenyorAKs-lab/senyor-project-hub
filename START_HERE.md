@@ -1,17 +1,18 @@
 # START HERE
 
-> Sürüm: 1.0  
-> Son güncelleme: 2026-08-13  
+> Sürüm: 1.1  
+> Son güncelleme: 2026-08-14  
 > Amaç: Bir insanın veya yeni bir yapay zekânın çalışmaya en az bağlam kaybıyla devam etmesi
 
 ## Okuma sırası
 
 1. Bu dosyayı tamamen oku.
-2. [PROJECT_INDEX.md](PROJECT_INDEX.md) içinden aktif projeyi bul.
-3. İlgili `projects/*.md` dosyasını tamamen oku.
-4. İşin türüne göre ilgili `standards/*.md` dosyasını oku.
-5. Uygulama yapmadan önce mevcut dosyaları ve son doğrulanmış test durumunu kontrol et.
-6. Çalışma sonunda anlamlı değişiklikleri güncel durum dosyasına işle.
+2. [CURRENT_WORK.md](CURRENT_WORK.md) içinden güncel sıralı planı ve sıradaki tek somut adımı bul.
+3. [PROJECT_INDEX.md](PROJECT_INDEX.md) içinden aktif projeyi bul.
+4. İlgili `projects/*.md` dosyasını tamamen oku.
+5. İşin türüne göre ilgili `standards/*.md` dosyasını oku.
+6. Uygulama yapmadan önce mevcut dosyaları ve son doğrulanmış test durumunu kontrol et.
+7. Çalışma sonunda anlamlı değişiklikleri güncel durum dosyasına işle.
 
 ## Bilginin öncelik sırası
 
