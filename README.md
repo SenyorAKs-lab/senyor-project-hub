@@ -8,6 +8,7 @@ Bu depo; projelerin güncel durumunu, geliştirme standartlarını, teknik karar
 ## Buradan başlayın
 
 - İnsan veya yapay zekâ olarak ilk kez geliyorsanız: [START_HERE.md](START_HERE.md)
+- Güncel sıralı çalışma planı için: [CURRENT_WORK.md](CURRENT_WORK.md)
 - Claude Code ile otomatik devir için: [CLAUDE.md](CLAUDE.md)
 - Projelerin durumunu görmek için: [PROJECT_INDEX.md](PROJECT_INDEX.md)
 - Aktif proje bağlamı için: [projects/AX_DOWNLOADER.md](projects/AX_DOWNLOADER.md)
