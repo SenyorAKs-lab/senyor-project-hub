@@ -4,6 +4,7 @@ Bu dosya merkez sistemdeki anlamlı değişiklikleri izler. Proje içi ayrıntı
 
 ## 2026-08-14
 
+- Güncel sıralı çalışma planı eklendi. Modelden bağımsız AI çalışma sistemi için yalnızca ölçülebilir parçaların baseline → minimal çekirdek → ince adaptörler ve kalite kapıları → A/B doğrulama sırasıyla uygulanmasına karar verildi; uygulama masaüstü oturumuna ertelendi.
 - Claude Code'un otomatik okuyacağı kök `CLAUDE.md` giriş dosyası eklendi; mevcut proje kaynağı ve ortak standartlar `@path` içe aktarımlarıyla bağlandı.
 - AI süreklilik standardına platform giriş dosyaları ve kaynak tekrarını önleyen adaptör kuralı eklendi.
 - AX Downloader güncel proje kaydı baştan sona yenilendi; doğrulanmış sonuçlar, açıklar, mimari ve tam yol haritası tek kaynakta toplandı.
