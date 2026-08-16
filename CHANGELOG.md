@@ -2,6 +2,21 @@
 
 Bu dosya merkez sistemdeki anlamlı değişiklikleri izler. Proje içi ayrıntılı sürüm notları ilgili projenin kendi deposunda tutulacaktır.
 
+## 2026-08-17
+
+- AX Downloader Python v0.4.1 davranış referansının CP-005K ve QG-004–QG-011
+  Windows kabul zincirini tamamladığı kaydedildi.
+- C#/.NET 10 taşımasında QG-CS001–QG-CS008 kapılarının Windows üzerinde geçtiği
+  ve son CP-008 koşusunda .NET SDK 10.0.400 ile dokuz projenin derlendiği
+  kaydedildi.
+- CP-008 uçtan uca oturumunda önceki CP regresyonlarının yeşil kaldığı, 22 yeni
+  session/wire/server/build/final işaretleyicisinin tamamının görüldüğü ve komut
+  isteminin hata işaretleyicisi olmadan geri döndüğü kaydedildi.
+- Aktif proje bağlamı ve güncel çalışma planı eski CP-005K aday durumundan
+  CP-008 kabul noktasına taşındı.
+- Sıradaki tek adım, HTTP 200/no-Range kaynaklar için C# tek bağlantılı yolun
+  QG-CS009 kabul sözleşmesini üretim kodundan önce dondurmak olarak belirlendi.
+
 ## 2026-08-14
 
 - Güncel sıralı çalışma planı eklendi. Modelden bağımsız AI çalışma sistemi için yalnızca ölçülebilir parçaların baseline → minimal çekirdek → ince adaptörler ve kalite kapıları → A/B doğrulama sırasıyla uygulanmasına karar verildi; uygulama masaüstü oturumuna ertelendi.

@@ -2,7 +2,7 @@
 
 Bu depo; projelerin güncel durumunu, geliştirme standartlarını, teknik kararlarını, test kanıtlarını ve yapay zekâlar arası çalışma sürekliliğini tek yerde tutar.
 
-> Son güncelleme: 2026-08-14  
+> Son güncelleme: 2026-08-17
 > Durum: Aktif, herkese açık merkez bilgi deposu
 
 ## Buradan başlayın
