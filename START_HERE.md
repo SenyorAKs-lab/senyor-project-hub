@@ -1,7 +1,7 @@
 # START HERE
 
 > Sürüm: 1.1  
-> Son güncelleme: 2026-08-14  
+> Son güncelleme: 2026-08-26  
 > Amaç: Bir insanın veya yeni bir yapay zekânın çalışmaya en az bağlam kaybıyla devam etmesi
 
 ## Okuma sırası

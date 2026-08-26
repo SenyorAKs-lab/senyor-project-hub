@@ -2,6 +2,23 @@
 
 Bu dosya merkez sistemdeki anlamlı değişiklikleri izler. Proje içi ayrıntılı sürüm notları ilgili projenin kendi deposunda tutulacaktır.
 
+## 2026-08-26
+
+- AX Downloader C# CP-042 R1 Safe Queue Reorder, Windows `full` koşusunda
+  CP-001→CP-042 zinciri, gerçek WinUI x64 build, Worker IPC smoke ve
+  restart-order persistence ile kabul edildi.
+- Nihai `CSHARP_CP042_BUILD_OK`, `CSHARP_CP042_CONFORMANCE_OK`,
+  `AX_FULL_CP001_CP042_OK` ve `AX_TESTS_OK` işaretleyicileriyle normal
+  komut istemi dönüşü kaydedildi.
+- İlk Candidate koşusundaki `CS0136` yerel isim çakışmasının R1'de yalnız
+  `index` → `columnIndex` düzeltmesiyle kapatıldığı; ürün semantiği ve test
+  assertion'larının değiştirilmediği kaydedildi.
+- `AX_Downloader_CSharp_CP042_Accepted.zip` kabul paketi
+  `52fdeeb4452d23aff1d93ca535b364eb62107c7a7efab302142046714fb3dfe6` SHA-256 değeriyle sabitlendi.
+- Güncel çalışma planı ve proje bağlamı CP-042 Accepted tabanına taşındı.
+- Sıradaki tek ürün adımı CP-043 Safe Empty Queue Deletion olarak belirlendi;
+  ilk işlem silme uygunluk ve receipt sözleşmesini dondurmaktır.
+
 ## 2026-08-17
 
 - AX Downloader Python v0.4.1 davranış referansının CP-005K ve QG-004–QG-011

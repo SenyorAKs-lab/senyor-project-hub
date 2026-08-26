@@ -1,10 +1,10 @@
 # Proje Dizini
 
-> Son güncelleme: 2026-08-17
+> Son güncelleme: 2026-08-26
 
 | Proje | Durum | Son doğrulanan aşama | Kritik açık / sıradaki ana adım |
 |---|---|---|---|
-| [AX Downloader](projects/AX_DOWNLOADER.md) | Aktif geliştirme / C# çekirdek taşıması | Python v0.4.1 ve C# QG-CS001–QG-CS008 Windows kabulü tamamlandı | QG-CS009 no-Range/tek-bağlantı sözleşmesini dondur; ardından C# kapısını uygula |
+| [AX Downloader](projects/AX_DOWNLOADER.md) | Aktif geliştirme / gerçek WinUI + Worker + IPC + SQLite | C# CP-001→CP-042 Windows kabulü tamamlandı | CP-043 Safe Empty Queue Deletion sözleşmesini dondur ve ilk kabulü full koş |
 | [ArchiveX](projects/ARCHIVEX.md) | Planlandı / beklemede | Gereksinim ve Android depolama kısıtları belirlendi | SAF/MediaStore tabanlı mimari tasarım |
 | [Local Metadata Manager](projects/LOCAL_METADATA_MANAGER.md) | Planlama | Güvenli toplu metadata yenileme kapsamı belirlendi | Dry-run ve karantina odaklı teknik tasarım |
 | [Jarvis](projects/JARVIS.md) | Fikir / beklemede | Android kişisel asistan hedefleri belirlendi | İzin, güvenlik ve çevrimdışı yetenek fizibilitesi |
